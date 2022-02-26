@@ -1,0 +1,4 @@
+#!/bin/sh
+cd `dirname $0`
+../src/lab11closedsystem -n .:../src $*
+# for shared lib, use: opp_run -l ../src/lab11closedsystem -n .:../src $*

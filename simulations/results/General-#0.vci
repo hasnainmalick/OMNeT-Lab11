@@ -1,0 +1,35 @@
+file 1199 1645452891                                            
+version 2
+run General-0-20220221-19:13:29-7108
+attr configname General
+attr datetime 20220221-19:13:29
+attr experiment General
+attr inifile opennetwork.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network opennetwork
+attr processid 7108
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.numJobs 6
+param **.queue1.serviceTime 3s
+param **.queue2.serviceTime 3s
+
+vector 0 opennetwork.queue2 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 opennetwork.queue1 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 2 opennetwork.sink lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+0	843 111 0 45 0 15 11 0 5 25 85
+1	954 111 0 44 0 15 11 0 5 25 85
+2	1065 132 24 55 3 18 12 3 18 126 1638
+

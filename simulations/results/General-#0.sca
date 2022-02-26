@@ -1,0 +1,111 @@
+version 2
+run General-0-20220221-19:13:29-7108
+attr configname General
+attr datetime 20220221-19:13:29
+attr experiment General
+attr inifile opennetwork.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network opennetwork
+attr processid 7108
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.numJobs 6
+param **.queue1.serviceTime 3s
+param **.queue2.serviceTime 3s
+
+scalar opennetwork.queue2 busy:timeavg 0.005
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar opennetwork.queue2 queueingTime:mean 7.5
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar opennetwork.queue2 queueingTime:max 15
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar opennetwork.queue2 queueLength:timeavg 0.0125
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar opennetwork.queue2 queueLength:max 5
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar opennetwork.queue2 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar opennetwork.queue1 busy:timeavg 0.005
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar opennetwork.queue1 queueingTime:mean 7.5
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar opennetwork.queue1 queueingTime:max 15
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar opennetwork.queue1 queueLength:timeavg 0.0125
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar opennetwork.queue1 queueLength:max 5
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar opennetwork.queue1 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar opennetwork.sink generation:mean 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, mean"
+scalar opennetwork.sink generation:max 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, max"
+scalar opennetwork.sink delaysVisited:mean 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, mean"
+scalar opennetwork.sink delaysVisited:max 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, max"
+scalar opennetwork.sink queuesVisited:mean 0.83333333333333
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, mean"
+scalar opennetwork.sink queuesVisited:max 1
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, max"
+scalar opennetwork.sink totalServiceTime:mean 3
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, mean"
+attr unit s
+scalar opennetwork.sink totalServiceTime:max 3
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, max"
+attr unit s
+scalar opennetwork.sink totalDelayTime:mean 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, mean"
+attr unit s
+scalar opennetwork.sink totalDelayTime:max 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, max"
+attr unit s
+scalar opennetwork.sink totalQueueingTime:mean 7.5
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, mean"
+attr unit s
+scalar opennetwork.sink totalQueueingTime:max 15
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, max"
+attr unit s
+scalar opennetwork.sink lifeTime:mean 10.5
+attr interpolationmode none
+attr title "lifetime of arrived jobs, mean"
+attr unit s
+scalar opennetwork.sink lifeTime:max 18
+attr interpolationmode none
+attr title "lifetime of arrived jobs, max"
+attr unit s
+
